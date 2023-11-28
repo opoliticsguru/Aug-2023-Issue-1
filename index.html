@@ -77,10 +77,6 @@
                         <th scope="row">Voter Turnout</th>\
                         <td>' + (feature.properties['Issue 1 Results_Precincts (map join) — Sheet1_Voter Turnout'] !== null ? autolinker.link(feature.properties['Issue 1 Results_Precincts (map join) — Sheet1_Voter Turnout'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">Yes</th>\
-                        <td>' + (feature.properties['Issue 1 Results_Precincts (map join) — Sheet1_Yes'] !== null ? autolinker.link(feature.properties['Issue 1 Results_Precincts (map join) — Sheet1_Yes'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
