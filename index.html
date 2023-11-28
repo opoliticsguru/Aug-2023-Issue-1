@@ -565,7 +565,7 @@
                 lineJoin: 'miter',
                 weight: 3.0, 
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_CountyOutline_3');
@@ -573,7 +573,7 @@
         map.getPane('pane_CountyOutline_3').style['mix-blend-mode'] = 'normal';
         var layer_CountyOutline_3 = new L.geoJson(json_CountyOutline_3, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_CountyOutline_3',
             layerName: 'layer_CountyOutline_3',
             pane: 'pane_CountyOutline_3',
